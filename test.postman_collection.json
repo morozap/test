@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "861db9a6-d946-4a5b-8b86-13e34ce2a0f7",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19227675",
+		"_collection_link": "https://universal-shadow-74513.postman.co/workspace/Team-Workspace~cbe0a815-bcdb-4739-8ffc-86f6408c82d9/collection/19227675-861db9a6-d946-4a5b-8b86-13e34ce2a0f7?action=share&source=collection_link&creator=19227675"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"title\": \"Новость тест\",\r\n        \"text\": \"Описание тестовой новости\",\r\n        \"userName\": \"Мороз АП\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_test}}/news_applications/v1/news"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"title\": \"Новость тест\",\r\n        \"text\": \"Описание тестовой новости\",\r\n        \"userName\": \"Мороз АП\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://93.84.86.69:9099/news_applications/v1/news/75"
+			},
+			"response": []
+		}
+	]
+}
